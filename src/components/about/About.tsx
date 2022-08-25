@@ -10,7 +10,7 @@ const About = () => {
   const minhaFoto = 'src/Assets/me-about.jpg'
 
   function ShowCompleted(){
-    setShowMore(showMore+1)
+    setShowMore(showMore + 1)
 
     document.getElementById('button__show__more')?.classList.add('d-none')
   }
