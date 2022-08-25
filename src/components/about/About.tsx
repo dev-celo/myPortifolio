@@ -22,10 +22,53 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={minhaFoto} alt="" />
+        <div className="about">
+          <div className="about__me">
+            <div className="about__me-image">
+              <img src='' alt="" />
+            </div>
           </div>
+
+          <div className='text__me'>
+            <p>
+              Desenvolvedor front - end com 1 ano de expêriência e noções gerais em back - end.
+              Estudando análise e desenvolvimento de software e apaixonado por programação web.
+            </p>
+
+            {
+              showMore && (
+                <div className='show__more'>
+                  <p>
+                    Desenvolvendo em front - end tenho conhecimento em HTML, CSS, Javascript e React. 
+                    - Bootstrap || Tailwind.
+                  </p>
+
+                  <p>
+                    Como back - end, tenho entendimento prévio em PHP e linguagens de programação orientado à objetos (java).
+                  </p>
+
+                  <p>
+                    Além tenho conhecimento e curto bastante Banco de dados relacional (SQL).
+                  </p>
+
+                  <p>
+                    Uso de versionamento (Git/github); 
+                  </p>
+                  
+                  <p>
+                    Além de atributos técnicos, busco sempre melhorar minha comunicação e o trabalho em equipe. Também disso tento implementar no meu dia a dia o aprendizado mútuo com todos ao meu redor.
+                  </p>
+
+                </div>
+              )
+            }
+          </div>
+          
+          <span id='button__show__more'>
+            <button onClick={ShowCompleted}  className='btn'>
+              Leia mais
+            </button>
+          </span>
         </div>
 
         <div className="about__content">
@@ -49,54 +92,9 @@ const About = () => {
             </article>
           </div>
           
-
-          <p>
-            Desenvolvedor front - end com 1 ano de expêriência e noções gerais em back -end.
-            Estudando análise e desenvolvimento de software e apaixonado por programação web
-            
-            <span id='button__show__more'> 
-              ... 
-              <span>
-                <button onClick={ShowCompleted}  className='btn'>
-                  Leia mais
-                </button>
-              </span>
-            </span>
-
-          </p>
-
-          {
-            showMore && (
-              <div>
-                <p>
-                  Desenvolvendo em front - end tenho conhecimento em HTML, CSS, Javascript e React. 
-                  - Bootstrap || Tailwind.
-                </p>
-
-                <p>
-                  Como back - end, tenho entendimento prévio em PHP e linguagens de programação orientado à objetos (java).
-                </p>
-
-                <p>
-                  Além tenho conhecimento e curto bastante Banco de dados relacional (SQL).
-                </p>
-
-                <p>
-                  Uso de versionamento (Git/github); 
-                </p>
-                
-                <p>
-                  Além de atributos técnicos, busco sempre melhorar minha comunicação e o trabalho em equipe. Também disso tento implementar no meu dia a dia o aprendizado mútuo com todos ao meu redor.
-                </p>
-
-              </div>
-            )
-          }
-
           <div className='btn-center'>
             <a href="#contact" className='btn btn-primary'>Let's talk</a>
           </div>
-          
         </div>
       </div>
     </section>

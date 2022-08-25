@@ -4,12 +4,15 @@
   gap: 15%;
 }
 
+.about {
+  display: inline-block;
+}
+
 .about__me {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-  display: grid;
   place-items: center;
 } 
 
@@ -25,9 +28,34 @@
   transition: var(--transition);
 }
 
+.about .text__me {
+  margin-top: 2.5rem;
+  width: 120%;
+  text-align: justify;
+  letter-spacing: -.05rem;
+}
+
+.text__me .show__more p {
+  margin-bottom: 1rem;
+}
+
+.text__me p {
+  margin-bottom: 1rem;
+}
+
+.about span button.btn{
+  display: inline-block;
+  background-color: black;
+}
+
+.about span button.btn:hover {
+  background-color: #fff;
+}
+
 .about__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -65,10 +93,12 @@
   margin: 1rem 0.2rem;
 }
 
-.about__content span button {
-  background: transparent;
-  margin-left: .5rem;
+.about__content .btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
+
 
 .btn.second__text{
   display: none;
@@ -106,8 +136,11 @@
     align-items: center;
   }
 
-
-
+  #button__show__more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 /*============== Media Query (small devices) ============== */
@@ -136,9 +169,26 @@
     margin: 1.5rem 0;
   }
 
+  .about .text__me {
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: justify;
+    letter-spacing: -.05rem;
+  }
+
   .btn-center{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .about__content .btn-center {
+    margin-top: -15rem;
+  }
+
+  #button__show__more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 }
