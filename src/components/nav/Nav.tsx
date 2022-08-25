@@ -3,23 +3,30 @@ import './nav.css'
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
-import { useState } from 'react'
+import * as Scroll from 'react-scroll';
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
-      <a onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} href=""><AiOutlineHome size={25}/></a>
-      
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser size={25}/></a>
 
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook size={25}/></a>
-
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine size={25}/></a>
+      {/* <Link activeClass="active" smooth spy to="about">
+        ABOUT
+      </Link> */}
+      <Scroll.Link activeClass="active" smooth spy to="home" href="#home"><AiOutlineHome size={25}/></Scroll.Link>
       
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail size={25}/></a>
+      <Scroll.Link activeClass="active" smooth spy to="about" href="#about"><AiOutlineUser size={25}/></Scroll.Link>
+
+      <Scroll.Link activeClass="active" smooth spy to="experience" href="#experience"><BiBook size={25}/></Scroll.Link>
+
+      <Scroll.Link activeClass="active" smooth spy to="services" href="#services"><RiServiceLine size={25}/></Scroll.Link>
+      
+      <Scroll.Link activeClass="active" smooth spy to="contact" href="#contact"><BiMessageSquareDetail size={25}/></Scroll.Link>
     </nav>
   )
 }
 
 export default Nav
+
+function updatePosition(arg0: string, updatePosition: any) {
+  throw new Error('Function not implemented.')
+}
