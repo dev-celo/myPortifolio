@@ -6,7 +6,7 @@ import HeaderSocials from './HeaderSocials'
 const Header = () => {
   let myImg = 'src/Assets/me1.png'
   return (
-    <header>
+    <header id='home'>
       <div className="container header__container">
         <h5>Hello I'am</h5>
         <h1>Marcelo Silva</h1>
