@@ -1,19 +1,19 @@
 header{
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
 .header__container {
-  text-align: center;
   height: 100%;
   position: relative;
+  text-align: center;
 }
 
 /* ========== CTA */
 
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -46,7 +46,7 @@ header{
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;

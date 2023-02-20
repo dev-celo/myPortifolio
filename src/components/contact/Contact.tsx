@@ -13,7 +13,7 @@ const Contact = () => {
       .then((result) => {
           alert('Mensagem enviada com sucesso')
       }, (error) => {
-          console.log(error.text);
+          alert(error.text);
       });
       e.target.reset()
   }

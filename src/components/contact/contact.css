@@ -3,10 +3,10 @@
 }
 
 .container.contact__container {
-  width: 80%;
   display: grid;
-  grid-template-columns: 30% 58%;
   gap: 12%;
+  grid-template-columns: 30% 58%;
+  width: 80%;
 }
 
 .contact__options {
@@ -17,10 +17,10 @@
 
 .contact__option {
   background: var(--color-bg-variant);
-  padding: 1.2rem;
   border-radius: 1.2rem;
-  text-align: center;
   border: 1px solid transparent;
+  padding: 1.2rem;
+  text-align: center;
   transition: var(--transition);
 }
 
@@ -35,9 +35,9 @@
 }
 
 .contact__option a {
-  margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 /* ================ FORM ================= */
@@ -48,13 +48,13 @@ form {
 }
 
 input, textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
   background: transparent;
   border: 2px solid var(--color-primary-variant);
-  resize: none;
+  border-radius: 0.5rem;
   color: var(--color-white);
+  padding: 1.5rem;
+  resize: none;
+  width: 100%;
 }
 
 /*============== Media Query (medium devices) ============== */

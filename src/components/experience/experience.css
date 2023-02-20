@@ -8,7 +8,8 @@
   gap: 2rem;
 }
 
-.experience__container > div {
+.experience__container > .experience__frontend,
+.experience__container > .experience__backend {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
@@ -36,7 +37,8 @@
 
 .experience__details {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  width: 7rem;
 }
 
 .experience__details:nth-child(even) {
