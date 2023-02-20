@@ -6,13 +6,11 @@ import { VscFolderLibrary } from 'react-icons/vsc'
 import { useState } from 'react'
 
 const About = () => {
-  const[showMore, setShowMore] = useState('')
-  const minhaFoto = 'src/Assets/me-about.jpg'
+  const[showMore, setShowMore] = useState(false);
+  const minhaFoto = 'src/Assets/me-about.jpg';
 
   function ShowCompleted(){
-    setShowMore(showMore + 1)
-
-    document.getElementById('button__show__more')?.classList.add('d-none')
+    setShowMore(!showMore);
   }
 
 
@@ -31,43 +29,47 @@ const About = () => {
 
           <div className='text__me'>
             <p>
-              Desenvolvedor front - end com 1 ano de expêriência e noções gerais em back - end.
-              Estudando análise e desenvolvimento de software e apaixonado por programação web.
+              Baiano, Desenvolvedor web, prazer sou Marcelo.
+              Estudante da Trybe, uma escola que ensina a programar, a aprender e a trabalhar. Gosto de estar me comunicando com todo tipo de diversidade e acho bacana conhecer pessoas diferentes, de locais e histórias diferentes;
+              Por ser "viciado" em desafios, sou imerso no mundo dos esportes, tendo como alguns hobbies: futebol, natação, jiu-jitsu e basquete por exemplo!
             </p>
 
             {
               showMore && (
                 <div className='show__more'>
                   <p>
-                    Desenvolvendo em front - end tenho conhecimento em HTML, CSS, Javascript e React. 
-                    - Bootstrap || Tailwind.
+                    Desenvolvedor Web com conhecimentos e habilidades em Typescript, React e sql onde. Além de conseguir manusear de maneira semântica HTML5, CSS3 e Bootstrap; tendo uma maior confiança em javascript com práticas de TDD. Pude aplicar essas habilidades em diversos projetos pessoais e avaliativos da trybe, postado no meu github.
+                    Gosto de poder deixar minha criatividade me levar e criar aplicações que outras pessoas irão usar! Além disso gosto de estar muito próximo do meu foco para ter bons resultados!
                   </p>
-
                   <p>
-                    Como back - end, tenho entendimento prévio em PHP e linguagens de programação orientado à objetos (java).
+                    Tenho observado que onde nós estamos faz total diferença em quem vamos nos tornar, por isso prezo por ambientes que me olham como uma pessoa, que respeite a natureza e qualquer manifestação de vida!
                   </p>
-
-                  <p>
-                    Além tenho conhecimento e curto bastante Banco de dados relacional (SQL).
-                  </p>
-
-                  <p>
-                    Uso de versionamento (Git/github); 
-                  </p>
-                  
-                  <p>
-                    Além de atributos técnicos, busco sempre melhorar minha comunicação e o trabalho em equipe. Também disso tento implementar no meu dia a dia o aprendizado mútuo com todos ao meu redor.
-                  </p>
-
+                  <small>
+                    <p>
+                      Podem me contatar por:
+                      E-mail: marcelohenrique.backend@gmail.com
+                      celular: (73) 99161-9209
+                    </p>
+                    <p>
+                      Acessem meus projetos no github:
+                      https://github.com/dev-celo
+                    </p>
+                  </small>
                 </div>
               )
             }
           </div>
           
           <span id='button__show__more'>
-            <button onClick={ShowCompleted}  className='btn'>
-              Leia mais
-            </button>
+            {
+              showMore === false
+                ? <button onClick={ShowCompleted}  className='btn'>
+                  Leia mais
+                </button>
+                : <button onClick={ShowCompleted}  className='btn'>
+                Leia menos
+              </button>
+            }
           </span>
         </div>
 
@@ -76,19 +78,23 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experiência</h5>
-              <small>3+ Anos Estudando as principais tecnologias</small>
+              <small>
+                Repositório estruturado contruído no decorrer de 3 anos de estudos
+              </small>
             </article>
 
             <article className='about__card'>
               <FiUsers className='about__icon'/>
               <h5>Trabalho Em Equipe</h5>
-              <small>Prezando boa comunicação e trabalho em equipe</small>
+              <small>
+                Prezo sempre pela colaboração, buscando uma comunicação assertia e convivência com diversidades
+              </small>
             </article>
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projetos</h5>
-              <small>20+ projetos de médio porte desenvolvidos</small>
+              <small>20+ projetos desenvolvidos no github</small>
             </article>
           </div>
           
