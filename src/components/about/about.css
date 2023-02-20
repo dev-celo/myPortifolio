@@ -23,8 +23,9 @@
 .about__me-image img{
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(11deg);
+  transform: rotate(25deg);
   transition: var(--transition);
+  width: 100%;
 }
 
 .about__me-image img:hover {

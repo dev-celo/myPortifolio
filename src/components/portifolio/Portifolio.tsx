@@ -10,6 +10,13 @@ const data = [
     demo: 'https://dev-celo.github.io/ecommerce/'
   },
   {
+    id: 7,
+    image: 'src/Assets/trivia.png',
+    title: 'Game trivia',
+    github: 'https://github.com/tryber/sd-027-a-project-trivia-react-redux/tree/main-group-25',
+    demo: 'https://google.com'
+  },
+  {
     id: 2,
     image: 'src/Assets/nlw.png',
     title: 'DoctorCare',
@@ -28,13 +35,6 @@ const data = [
     image: 'src/Assets/jogo-da-velha.png',
     title: 'Jogo da velha',
     github: 'https://github.com/dev-celo/jogo_da_velha',
-    demo: 'https://google.com'
-  },
-  {
-    id: 5,
-    image: 'src/Assets/portfolio5.png',
-    title: 'Page Title 5',
-    github: 'https://github.com',
     demo: 'https://google.com'
   },
   {

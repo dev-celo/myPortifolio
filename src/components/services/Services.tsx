@@ -1,8 +1,13 @@
-import React from 'react'
-import { BiCheck } from 'react-icons/bi'
-import './services.css'
+import React from 'react';
+import { BiCheck } from 'react-icons/bi';
+import './services.css';
+import array_of_services from '../../services_API/servicesOfferApi';
+import array_web_of_services from '../../services_API/servicesWebApi';
 
 const Services = () => {
+  const array_frontend = array_of_services()
+  const array_web = array_web_of_services()
+
   return (
     <section id='services'>
       <h5>What I Offer</h5>
@@ -15,30 +20,14 @@ const Services = () => {
           </div>
 
           <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Cuidado efetivo com parte gráfica.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Melhor experiência ao usuário.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Layouts Responsivos.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Projetos Desenvolvidos com React.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Experiência em Bootstrap.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Bom domínio do DOM e BOM do Javascript.</p>
-            </li>
+            {
+              array_frontend.map((service) => (
+                <li key={ service.id }>
+                  <BiCheck className='service__list-icon'/>
+                  <p>{ service.service }</p>
+                </li>
+              ))
+            }
           </ul>
         </article>
         {/* END OF UI/UX */}
@@ -50,19 +39,8 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className='service__list-icon'/>
-              <p>Bom tratamento de segurança</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Domínio de Sql</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Criação de painéis de login/cadastro em PHP</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Linguagem de Programação Orientada à Objetos</p>
+              <p>Bom entendimento de MySql</p>
+              <p>Experiência com PHP 1° linguagem web que tive contato</p>
             </li>
           </ul>
         </article>
@@ -73,22 +51,14 @@ const Services = () => {
           </div>
 
           <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Criação de Web page dinâmica.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>One Pages Responsivos.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Criação de cardápios ou menús interativos.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Planejamento, Construção e Manutenção de páginas Web.</p>
-            </li>
+            {
+              array_web.map((service) => (
+                <li key={service.id}>
+                  <BiCheck className='service__list-icon'/>
+                  <p>{ service.service }</p>
+                </li>
+              ))
+            }
           </ul>
         </article>
         {/* END WEB DEVELOPMENT */}

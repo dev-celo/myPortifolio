@@ -23,7 +23,7 @@ const About = () => {
         <div className="about">
           <div className="about__me">
             <div className="about__me-image">
-              <img src='' alt="" />
+              <img src="src/Assets/logo-dev-celo.png" alt="" />
             </div>
           </div>
 
