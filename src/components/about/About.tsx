@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const About = () => {
   const[showMore, setShowMore] = useState(false);
-  const minhaFoto = 'src/Assets/me-about.jpg';
+  const officeImg = 'src/Assets/office.png';
 
   function ShowCompleted(){
     setShowMore(!showMore);
@@ -23,7 +23,7 @@ const About = () => {
         <div className="about">
           <div className="about__me">
             <div className="about__me-image">
-              <img src='' alt="" />
+              <img src={ officeImg } alt="Office image colorful." />
             </div>
           </div>
 
