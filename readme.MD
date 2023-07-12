@@ -25,16 +25,11 @@ cd myPortifolio
 ```
 npm install
 ```
-```
 Inicie a aplicação:
 ```
-```
-npm start
-```
+npm run dev
 ```
 Abra seu navegador e acesse o endereço:
-```
-
 ```
 http://localhost:3000
 ```
