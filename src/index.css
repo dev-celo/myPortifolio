@@ -12,6 +12,7 @@
 
 :root {
   --color-bg: rgb(28, 26, 26);
+  --color-bg-footer: rgb(68, 68, 68);
   --color-bg-variant: hsl(240, 7%, 6%);
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
