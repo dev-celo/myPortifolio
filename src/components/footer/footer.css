@@ -3,7 +3,7 @@ footer {
   padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 footer a {
@@ -11,8 +11,8 @@ footer a {
 }
 
 footer img {
-  width: 600px;
-  height: 350px;
+  width: 400px;
+  height: 290px;
   display: inline-block;
 }
 
