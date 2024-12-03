@@ -8,9 +8,9 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
   function sendEmail(e: any) {
     e.preventDefault();
-
-    emailjs.sendForm('service_bap6lhq', 'template_8ixlnrs', e.target, 'u2JAbqTi5XZLU2e9j')
+    emailjs.sendForm('service_3h5sxtl', 'template_8ixlnrs', e.target, 'u2JAbqTi5XZLU2e9j')
       .then((result) => {
+        console.log(result);
           alert('Mensagem enviada com sucesso')
       }, (error) => {
           console.log(error.text);
@@ -41,14 +41,14 @@ const Contact = () => {
             <BsLinkedin className='contact__option-icon'/>
             <h4>Linked in</h4>
             <h5>Marcelo H Silva</h5>
-            <a target='__blank' href="https://www.linkedin.com/in/marcelo-henrique-pereira-da-silva-308386205/">visit to profile</a>
+            <a target='__blank' href="https://www.linkedin.com/in/dev-celo/">visit to profile</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
         <form onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your full name' required />
           <input type="email"  name='email' placeholder='Your Email' required/>
-          <textarea name="messa" rows={7} placeholder='Your Message' required></textarea>
+          <textarea name="message" rows={7} placeholder='Your Message' required></textarea>
           <button className='btn btn-primary' type='submit'>Send Message</button>
         </form>
       </div>
