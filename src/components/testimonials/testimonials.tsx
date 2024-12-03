@@ -47,7 +47,7 @@ const data = [
 const testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
+      <h5>Review from clients and coworkers</h5>
       <h2>Testimonials</h2>
 
       <Swiper

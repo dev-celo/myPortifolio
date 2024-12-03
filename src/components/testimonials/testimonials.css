@@ -54,7 +54,11 @@
   .container.testimonials__container {
     width: 60%;
   }
+  .container.testimonials__container {
+    height: 50rem;
+  }
 }
+
 
 /*============== Media Query (small devices) ============== */
 
@@ -65,5 +69,10 @@
 
   .client__review {
     width: var(--container-width-sm);
+  }
+
+  .container.testimonials__container {
+    height: 65rem;
+    padding-bottom: 2rem;
   }
 }
