@@ -5,9 +5,9 @@ const data = [
   {
     id: 1,
     image: 'src/Assets/ecommerce.png',
-    title: 'E-commerce Cara',
+    title: 'E-commerce',
     github: 'https://github.com/dev-celo/ecommerce',
-    demo: 'https://dev-celo.github.io/ecommerce/'
+    demo: 'https://dev-celo.github.io/frontend-ecommerce/'
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ const Portifolio = () => {
                 </div>
                   <h3>{title}</h3>
                   <div className="portifolio__item-cta">
-                    <a href={github}className='btn'>Github</a>
+                    <a href={github} className='btn' target='__blank'>Github</a>
                     <a href={demo} className='btn btn-primary' target='__blank'>Live Demo</a>
                   </div>
               </article>
