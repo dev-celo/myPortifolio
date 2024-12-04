@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const About = () => {
   const [showMore, setShowMore] = useState(false);
-  const officeImg = "src/Assets/im-generic-art.jpeg";
+  const officeImg = "/Assets/im-generic-art.jpeg";
 
   function ShowCompleted() {
     setShowMore(!showMore);

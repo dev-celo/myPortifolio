@@ -39,7 +39,7 @@ body {
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
-  background-image: url(../src/Assets/bg-texture.png);
+  background-image: url(/Assets/bg-texture.png);
 }
 
 /*============== General styles ============== */
