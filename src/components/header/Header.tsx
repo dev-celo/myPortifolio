@@ -4,7 +4,7 @@ import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
-  let myImg = 'src/Assets/me1.png'
+  let myImg = '/Assets/me1.png'
   return (
     <header id='home'>
       <div className="container header__container">

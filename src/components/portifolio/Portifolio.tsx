@@ -4,42 +4,42 @@ import './portifolio.css'
 const data = [
   {
     id: 1,
-    image: 'src/Assets/ecommerce.png',
-    title: 'E-commerce Cara',
+    image: '/Assets/ecommerce.png',
+    title: 'E-commerce',
     github: 'https://github.com/dev-celo/ecommerce',
-    demo: 'https://dev-celo.github.io/ecommerce/'
+    demo: 'https://dev-celo.github.io/frontend-ecommerce/'
   },
   {
     id: 2,
-    image: 'src/Assets/nlw.png',
+    image: '/Assets/nlw.png',
     title: 'DoctorCare',
     github: 'https://github.com/dev-celo/NLW',
     demo: 'https://dev-celo.github.io/NLW/'
   },
   {
     id: 3,
-    image: 'src/Assets/app-mata-mosquito.png',
+    image: '/Assets/app-mata-mosquito.png',
     title: 'Game Mata Mosquito',
     github: 'https://github.com/dev-celo/App_mata_mosquito',
     demo: 'https://dev-celo.github.io/App_mata_mosquito/app-principal/index.html'
   },
   {
     id: 4,
-    image: 'src/Assets/jogo-da-velha.png',
+    image: '/Assets/jogo-da-velha.png',
     title: 'Jogo da velha',
     github: 'https://github.com/dev-celo/jogo_da_velha',
     demo: 'https://google.com'
   },
   {
     id: 5,
-    image: 'src/Assets/portfolio5.png',
+    image: '/Assets/portfolio5.png',
     title: 'Page Title 5',
     github: 'https://github.com',
     demo: 'https://google.com'
   },
   {
     id: 6,
-    image: 'src/Assets/portfolio6.jpg',
+    image: '/Assets/portfolio6.jpg',
     title: 'Page Title 6',
     github: 'https://github.com',
     demo: 'https://google.com'
@@ -63,7 +63,7 @@ const Portifolio = () => {
                 </div>
                   <h3>{title}</h3>
                   <div className="portifolio__item-cta">
-                    <a href={github}className='btn'>Github</a>
+                    <a href={github} className='btn' target='__blank'>Github</a>
                     <a href={demo} className='btn btn-primary' target='__blank'>Live Demo</a>
                   </div>
               </article>

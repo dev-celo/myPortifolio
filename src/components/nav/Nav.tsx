@@ -8,19 +8,15 @@ import * as Scroll from 'react-scroll';
 const Nav = () => {
   return (
     <nav>
-
-      {/* <Link activeClass="active" smooth spy to="about">
-        ABOUT
-      </Link> */}
-      <Scroll.Link activeClass="active" smooth spy to="home" href="#home"><AiOutlineHome size={25}/></Scroll.Link>
+      <Scroll.Link activeClass="active" smooth="easeInOutQuad" spy duration={300} to="home" href="#home"><AiOutlineHome size={25}/></Scroll.Link>
       
-      <Scroll.Link activeClass="active" smooth spy to="about" href="#about"><AiOutlineUser size={25}/></Scroll.Link>
+      <Scroll.Link activeClass="active" smooth="easeInOutQuad" spy duration={300} to="about" href="#about"><AiOutlineUser size={25}/></Scroll.Link>
 
-      <Scroll.Link activeClass="active" smooth spy to="experience" href="#experience"><BiBook size={25}/></Scroll.Link>
+      <Scroll.Link activeClass="active" smooth="easeInOutQuad" spy duration={300} to="experience" href="#experience"><BiBook size={25}/></Scroll.Link>
 
-      <Scroll.Link activeClass="active" smooth spy to="services" href="#services"><RiServiceLine size={25}/></Scroll.Link>
+      <Scroll.Link activeClass="active" smooth="easeInOutQuad" spy duration={300} to="services" href="#services"><RiServiceLine size={25}/></Scroll.Link>
       
-      <Scroll.Link activeClass="active" smooth spy to="contact" href="#contact"><BiMessageSquareDetail size={25}/></Scroll.Link>
+      <Scroll.Link activeClass="active" smooth="easeInOutQuad" spy duration={300} to="contact" href="#contact"><BiMessageSquareDetail size={25}/></Scroll.Link>
     </nav>
   )
 }

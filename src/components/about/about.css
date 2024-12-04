@@ -155,16 +155,6 @@
     margin: 0 auto 3rem;
   }
 
-  .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .about__card:nth-child(3){
-      position: relative;
-      left: 52.5%;
-  }
-
   .about__content {
     text-align: center;
   }

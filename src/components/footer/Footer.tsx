@@ -5,7 +5,7 @@ import { GrInstagram, GrLinkedinOption, GrGithub } from 'react-icons/gr'
 const Footer = () => {
   return (
     <footer>
-      <img src="src/Assets/logo-dev-celo.png" alt="Logo Dev-Celo" />
+      <img src="/Assets/logotipo-dev-celo.png" alt="Logo Dev-Celo" />
 
       <ul className='permanlinks'>
         <li><a href="#">Home</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
           <GrInstagram  className='footer__socials-icon'/>
         </a>
 
-        <a target="_blank" href="https://www.linkedin.com/in/marcelo-henrique-pereira-da-silva-308386205/">
+        <a target="_blank" href="https://www.linkedin.com/in/devcelo/">
           <GrLinkedinOption className='footer__socials-icon' />
         </a>
 
