@@ -22,7 +22,7 @@ const Footer = () => {
           <GrInstagram  className='footer__socials-icon'/>
         </a>
 
-        <a target="_blank" href="https://www.linkedin.com/in/dev-celo/">
+        <a target="_blank" href="https://www.linkedin.com/in/devcelo/">
           <GrLinkedinOption className='footer__socials-icon' />
         </a>
 
